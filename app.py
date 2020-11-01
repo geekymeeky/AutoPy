@@ -15,7 +15,7 @@ def contribute():
         try:
             return render_template('thanks.html')
         except BadRequest:
-            return redirect(url_for('contribute.html'))
+            return redirect(url_for('contribute'))
     return render_template('contribute.html')
 
 
